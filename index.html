@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohammed Riyaz A | Portfolio</title>
+  <title>Mohammed Riyaz A | Colorful Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    html {
+    * {
+      box-sizing: border-box;
       scroll-behavior: smooth;
     }
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #141E30, #243B55);
+      background: linear-gradient(135deg, #6e45e2, #88d3ce);
       color: white;
     }
     header {
-      text-align: center;
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
       padding: 80px 20px 40px;
-      background: linear-gradient(to right, #8e44ad, #3498db);
+      text-align: center;
+      color: #fff;
     }
     header h1 {
       font-size: 3em;
@@ -26,69 +28,77 @@
     }
     header p {
       font-size: 1.2em;
-      color: #e0e0e0;
+      opacity: 0.9;
     }
     nav {
+      background-color: #000;
       text-align: center;
-      background-color: #1a1a1a;
-      padding: 10px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
-      text-decoration: none;
       color: #00ffff;
       margin: 0 15px;
+      text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
     }
     nav a:hover {
-      text-decoration: underline;
+      color: #ffcc00;
     }
-    section {
-      padding: 50px 20px;
+    .section {
+      padding: 60px 20px;
       max-width: 900px;
       margin: auto;
     }
     h2 {
-      border-bottom: 2px solid #00ffff;
-      display: inline-block;
+      font-size: 2em;
       margin-bottom: 20px;
+      border-bottom: 3px solid #ffcc00;
+      display: inline-block;
     }
     ul {
       list-style: none;
       padding: 0;
     }
     ul li::before {
-      content: "✔";
+      content: "✨";
       margin-right: 10px;
-      color: #2ecc71;
+      color: #ffe600;
     }
     .project {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 15px;
+      background: rgba(0, 0, 0, 0.3);
+      border-left: 5px solid #ffcc00;
+      padding: 20px;
       margin-bottom: 20px;
-      border-left: 5px solid #00ffff;
+      border-radius: 10px;
     }
-    .button {
+    a.button {
       display: inline-block;
-      margin: 20px 10px;
-      padding: 10px 20px;
-      background-color: #00ffff;
-      color: black;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
       text-decoration: none;
-      transition: transform 0.2s;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: transform 0.3s, background 0.3s;
     }
-    .button:hover {
+    a.button:hover {
       transform: scale(1.05);
+      background: linear-gradient(90deg, #e52e71, #ff8a00);
     }
     footer {
+      background: #000;
+      color: #ccc;
       text-align: center;
       padding: 30px;
-      font-size: 0.9em;
-      background-color: #111;
-      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      nav a { display: block; margin: 10px 0; }
     }
   </style>
 </head>
@@ -96,7 +106,8 @@
 
   <header>
     <h1>Mohammed Riyaz A</h1>
-    <p>Technical Analyst • Service Engineer • Software tester VR/Manual</p>
+    <p>Technical Analyst • Service Engineer • Software Tester</p>
+    <a href="resume.pdf" download class="button">📄 Download Resume</a>
   </header>
 
   <nav>
@@ -104,42 +115,38 @@
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-    <a href="resume.pdf" download class="button">Download Resume</a>
   </nav>
 
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Dedicated and skilled Technical Analyst and Service Engineer with over 4 years of experience in simulator-based training, technical support, and Python testing. Seeking to contribute to my expertise and problem-solving abilities in a challenging environment that encourages continuous learning and growth.</p>
+    <p>Dedicated Technical Analyst and Service Engineer with 4+ years of experience in VR simulator training, desktop support, and Python testing. Passionate about solving technical problems and improving user experience.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="section">
     <h2>Skills</h2>
     <ul>
-      <li>IT desktop Support & Troubleshooting</li>
-      <li>Windows Administration (Windows server 19/22).</li>
-      <li>Operating System tools: Rufus, Ventoy and woeUSB</li>
-      <li>Remote Desktop Tools: TeamViewer, Any Desk, Ultra Viewer.</li>
-      <li>MSO tools: Office 365.</li>
-      <li>Simulators Software Testing - Manual.</li>
-      <li>Remote Desktop Tools: TeamViewer, Any Desk, Ultra Viewer.</li>
-      <li>Simulators Installation - Electrical Software Inspection.</li>
-      <li>Customer Service & Documentation- Power BI/ MS 365.</li>
+      <li>Desktop Support & Troubleshooting</li>
+      <li>Windows Administration (Server 2019/22)</li>
+      <li>Python Testing & Manual QA</li>
+      <li>Remote Tools: TeamViewer, AnyDesk</li>
+      <li>Office Tools: Power BI, MS 365</li>
+      <li>Simulator Software Installation</li>
     </ul>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="project">
       <h3>🛠 Support Dashboard</h3>
-      <p>Built a dashboard using Excel + Python for service ticket analytics and resolution tracking.</p>
+      <p>Excel + Python dashboard for service ticket analysis and tracking.</p>
     </div>
     <div class="project">
       <h3>💻 System Health Monitor</h3>
-      <p>A Python script to monitor CPU, memory, and disk usage with auto-alerts.</p>
+      <p>Python-based CPU, RAM, and disk usage tracker with alerts.</p>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:mohammedriyas6379@gmail.com" style="color:#00ffff;">mohammedriyas6379@gmail.com</a></p>
     <p>Phone: +91 6379213900</p>
@@ -147,7 +154,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Mohammed Riyaz A  | Built with github
+    &copy; 2025 Mohammed Riyaz A | Built with ❤️ and HTML
   </footer>
 
 </body>
