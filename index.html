@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Riyaaz Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riyaaz | Colorful Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: linear-gradient(to right, #8e44ad, #3498db);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    header p {
+      font-size: 1.3em;
+      color: #f1f1f1;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      color: #ffd700;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "✔";
+      margin-right: 10px;
+      color: #2ecc71;
+    }
+
+    .project {
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-left: 5px solid #00ffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      background-color: #1a1a1a;
+      color: #aaa;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
 </head>
-<body style="background:#121212; color:white; font-family:sans-serif; text-align:center; padding:50px;">
-  <h1>Welcome to Riyaaz's Portfolio</h1>
-  <p>This is my free website hosted using GitHub Pages!</p>
+<body>
+  <header>
+    <h1>Riyaaz</h1>
+    <p>Technical Analyst • Service Engineer • Python Tester</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I’m Riyaaz, a passionate technical analyst with 4+ years of experience in hardware support, Python testing, and simulator-based training.</p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Hardware & OS Troubleshooting</li>
+      <li>Python Testing Automation</li>
+      <li>Service Desk Operations</li>
+      <li>Network & System Monitoring</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>🛠 Support Desk Dashboard</h3>
+      <p>Built a dashboard using Excel + Python to analyze service ticket trends and KPIs.</p>
+    </div>
+    <div class="project">
+      <h3>💻 System Health Monitor</h3>
+      <p>Python script that reports CPU, RAM, and disk health in real-time.</p>
+    </div>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mohammedriyas6379@gmail.com">mohammedriyas6379@gmail.com</a></p>
+    <p>Phone: +91 6379213900</p>
+    <p>GitHub: <a href="https://github.com/riyaaz-mohammed" target="_blank">github.com/riyaaz-mohammed</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Riyaaz | All rights reserved.
+  </footer>
 </body>
 </html>
