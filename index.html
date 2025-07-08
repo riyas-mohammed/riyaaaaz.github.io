@@ -152,7 +152,27 @@ header {
 <p>•	AI skill program – Novi Tech.<p>
 <p>•	AI Microsoft Azure Fundamentals – Microsoft.<p>
   </section>
-  
+
+  .certificate-marquee {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.certificate-marquee img {
+  width: 180px;               /* Smaller width */
+  height: auto;
+  border-radius: 15px;        /* Curved corners */
+  border: 3px solid white;    /* Optional white border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: transform 0.3s ease;
+}
+
+.certificate-marquee img:hover {
+  transform: scale(1.05);     /* Slight zoom on hover */
+}
   <section id="certificates" class="section">
   <h2>Certificates</h2>
   <div class="certificate-marquee">
