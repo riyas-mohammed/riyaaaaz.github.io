@@ -16,21 +16,14 @@
       background: linear-gradient(135deg, #6e45e2, #88d3ce);
       color: white;
     }
- <header>
-  <!-- your profile image, name, and button -->
-</header>
-
-<!-- Add the gradient SVG directly below the header -->
-<svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff6a00" />
-      <stop offset="100%" stop-color="#ee0979" />
-    </linearGradient>
-  </defs>
-  <path fill="url(#waveGradient)" d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z"></path>
-</svg>
-
+header {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  padding: 80px 20px 40px;
+  text-align: center;
+  color: #fff;
+  border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+    }
     .profile-pic {
       width: 150px;
       height: 150px;
